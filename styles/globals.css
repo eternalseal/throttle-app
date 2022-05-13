@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.btn {
+		@apply py-3 px-4 font-semibold rounded-full uppercase text-xs leading-4 gap-2 flex items-center justify-center transition-all tracking-[1px] text-black;
+	}
+	.btn-primary {
+		@apply text-white bg-teal-500 focus:outline-none 
+    focus:ring focus:ring-teal-400 focus:ring-offset-2 disabled:text-white disabled:pointer-events-none;
+	}
+}
